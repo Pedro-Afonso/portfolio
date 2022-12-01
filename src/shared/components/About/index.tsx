@@ -1,6 +1,8 @@
 import { Avatar, Box, Paper, Typography } from "@mui/material";
 import { VTabs } from "../VTabs";
 
+import pedroImg from "/public/pedroFoto.jpeg";
+
 const VTabsProps = [
   {
     index: 0,
@@ -25,7 +27,7 @@ export const About = () => {
           <Avatar
             sx={{ height: "5rem", width: "5rem" }}
             alt="Pedro Afonso"
-            src="/public/pedroFoto.jpeg"
+            src={pedroImg}
           />
           <Typography fontSize="1.125rem">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad
