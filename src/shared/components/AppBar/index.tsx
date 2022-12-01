@@ -19,6 +19,8 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 
+import pedroImg from "/public/pedroFoto.jpeg";
+
 const pages = [
   { page: "Inicial", link: "#hero" },
   { page: "Projetos", link: "#projects" },
@@ -156,7 +158,7 @@ export const AppNavbar = () => {
             </Box>
             <Tooltip title="Contatos">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Pedro Afonso" src="/public/pedroFoto.jpeg" />
+                <Avatar alt="Pedro Afonso" src={pedroImg} />
               </IconButton>
             </Tooltip>
             <Menu
