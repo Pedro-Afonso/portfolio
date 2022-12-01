@@ -25,7 +25,7 @@ export const About = () => {
           <Avatar
             sx={{ height: "5rem", width: "5rem" }}
             alt="Pedro Afonso"
-            src="/src/assets/pedroFoto.jpeg"
+            src="/public/pedroFoto.jpeg"
           />
           <Typography fontSize="1.125rem">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad
