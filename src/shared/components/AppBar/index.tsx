@@ -156,10 +156,7 @@ export const AppNavbar = () => {
             </Box>
             <Tooltip title="Contatos">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar
-                  alt="Pedro Afonso"
-                  src="/public/assets/pedroFoto.jpeg"
-                />
+                <Avatar alt="Pedro Afonso" src="/src/assets/pedroFoto.jpeg" />
               </IconButton>
             </Tooltip>
             <Menu

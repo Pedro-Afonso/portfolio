@@ -6,14 +6,14 @@ const myProjects = [
     _id: 1,
     title: "Music App",
     techStack: "React JS, Material UI, Redux Toolkit , Rapid API",
-    thumbnail: "/public/assets/micro-spotify.png",
+    thumbnail: "/src/assets/micro-spotify.png",
     github: "https://www.github.com/pedro-afonso/micro-spotify",
     url: "https://pedro-afonso-music-app.netlify.app",
   },
   {
     _id: 2,
     title: "Reactgram",
-    thumbnail: "/public/assets/micro-spotify.png",
+    thumbnail: "/src/assets/micro-spotify.png",
     techStack: "React JS, Material UI, Redux Toolkit, Express, MongoDB",
     github: "https://www.github.com/pedro-afonso/reactgram-frontend",
     url: "https://reactgram-frontend.vercel.app",
@@ -21,7 +21,7 @@ const myProjects = [
   {
     _id: 3,
     title: "Realtime Chat App",
-    thumbnail: "/public/assets/micro-spotify.png",
+    thumbnail: "/src/assets/micro-spotify.png",
     techStack:
       "React JS, Material UI, Redux Toolkit, Express, MongoDB, Socket.IO",
     github: "https://www.github.com/pedro-afonso/chat-app-frontend",
