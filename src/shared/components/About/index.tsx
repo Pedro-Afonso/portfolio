@@ -18,7 +18,17 @@ const VTabsProps = [
 
 export const About = () => {
   return (
-    <Box id="about" component={Paper} height="100vh" minHeight="600px">
+    <Box
+      id="about"
+      component={Paper}
+      height="100vh"
+      minHeight="600px"
+      sx={[
+        { background: "#000000" },
+        { background: "-webkit-linear-gradient(to right, #434343, #000000)" },
+        { background: "linear-gradient(to right, #434343, #000000)" },
+      ]}
+    >
       <Box pt={10} marginX="auto" px={10} maxWidth="lg">
         <Typography variant="h2" fontSize="3.125rem">
           Sobre mim

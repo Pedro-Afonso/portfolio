@@ -54,7 +54,14 @@ export const AppNavbar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar
+      position="fixed"
+      sx={[
+        { background: "#000000" },
+        { background: "-webkit-linear-gradient(to right, #434343, #000000)" },
+        { background: "linear-gradient(to right, #434343, #000000)" },
+      ]}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Large */}
