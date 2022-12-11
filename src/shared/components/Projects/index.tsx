@@ -1,6 +1,16 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { UCard } from "../UCard";
 
+/* Icons */
+import typescriptIcon from "../../assets/icons/typescript.svg";
+import rapidApiIcon from "../../assets/icons/rapidapi.svg";
+import expressIcon from "../../assets/icons/express.svg";
+import mongoDbIcon from "../../assets/icons/mongodb.svg";
+import socketIcon from "../../assets/icons/socket.svg";
+import reactIcon from "../../assets/icons/react.svg";
+import reduxIcon from "../../assets/icons/redux.svg";
+import materialUiIcon from "../../assets/icons/materialui.png";
+
 const myProjects = [
   {
     _id: 1,
@@ -10,6 +20,30 @@ const myProjects = [
       "https://user-images.githubusercontent.com/50973575/197407618-a35bf452-5d24-4988-8a16-30436f313829.png",
     github: "https://www.github.com/pedro-afonso/micro-spotify",
     url: "https://pedro-afonso-music-app.netlify.app",
+    stack: [
+      {
+        name: "React",
+        iconUrl: reactIcon,
+      },
+      {
+        name: "Redux",
+        iconUrl: reduxIcon,
+      },
+      {
+        name: "Rapid API",
+        iconUrl: rapidApiIcon,
+      },
+    ],
+    secondaryStack: [
+      {
+        name: "Typescript",
+        iconUrl: typescriptIcon,
+      },
+      {
+        name: "Material UI",
+        iconUrl: materialUiIcon,
+      },
+    ],
   },
   {
     _id: 2,
@@ -19,6 +53,34 @@ const myProjects = [
     techStack: "React JS, Material UI, Redux Toolkit, Express, MongoDB",
     github: "https://www.github.com/pedro-afonso/reactgram-frontend",
     url: "https://reactgram-frontend.vercel.app",
+    stack: [
+      {
+        name: "React",
+        iconUrl: reactIcon,
+      },
+      {
+        name: "Redux",
+        iconUrl: reduxIcon,
+      },
+      {
+        name: "Express",
+        iconUrl: expressIcon,
+      },
+      {
+        name: "Mongo DB",
+        iconUrl: mongoDbIcon,
+      },
+    ],
+    secondaryStack: [
+      {
+        name: "Typescript",
+        iconUrl: typescriptIcon,
+      },
+      {
+        name: "Material UI",
+        iconUrl: materialUiIcon,
+      },
+    ],
   },
   {
     _id: 3,
@@ -29,6 +91,38 @@ const myProjects = [
       "React JS, Material UI, Redux Toolkit, Express, MongoDB, Socket.IO",
     github: "https://www.github.com/pedro-afonso/chat-app-frontend",
     url: "https://pedro-afonso-chat-app.netlify.app",
+    stack: [
+      {
+        name: "React",
+        iconUrl: reactIcon,
+      },
+      {
+        name: "Redux",
+        iconUrl: reduxIcon,
+      },
+      {
+        name: "Express",
+        iconUrl: expressIcon,
+      },
+      {
+        name: "Mongo DB",
+        iconUrl: mongoDbIcon,
+      },
+    ],
+    secondaryStack: [
+      {
+        name: "Typescript",
+        iconUrl: typescriptIcon,
+      },
+      {
+        name: "Material UI",
+        iconUrl: materialUiIcon,
+      },
+      {
+        name: "Socket.IO",
+        iconUrl: socketIcon,
+      },
+    ],
   },
 ];
 

@@ -1,5 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
+  Avatar,
+  AvatarGroup,
+  Box,
   Button,
   Card,
   CardActionArea,
@@ -17,11 +20,20 @@ interface ICard {
   thumbnail: string;
   github: string;
   url: string;
+  stack: { name: string; iconUrl: string }[];
+  secondaryStack: { name: string; iconUrl: string }[];
 }
 
 /* #1A2632 */
 
-export const UCard: React.FC<ICard> = ({ title, thumbnail, github, url }) => {
+export const UCard: React.FC<ICard> = ({
+  title,
+  thumbnail,
+  github,
+  url,
+  stack,
+  secondaryStack,
+}) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const refCard = useRef<HTMLDivElement>(null);
 
@@ -54,6 +66,31 @@ export const UCard: React.FC<ICard> = ({ title, thumbnail, github, url }) => {
           />
           <CardContent>
             <Typography>{title}</Typography>
+            <AvatarGroup variant="rounded" max={10}>
+              {secondaryStack.map(({ name, iconUrl }, i) => (
+                <Avatar
+                  key={i}
+                  sx={{
+                    alignSelf: "end",
+                    width: "20px",
+                    height: "20px",
+                    background: "#4E4E4E",
+                  }}
+                  title={name}
+                  alt={name}
+                  src={iconUrl}
+                />
+              ))}
+              {stack.map(({ name, iconUrl }, i) => (
+                <Avatar
+                  key={i}
+                  sx={{ width: "40px", height: "40px", background: "#4E4E4E" }}
+                  title={name}
+                  alt={name}
+                  src={iconUrl}
+                />
+              ))}
+            </AvatarGroup>
           </CardContent>
         </CardActionArea>
         <CardActions>
