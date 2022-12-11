@@ -1,20 +1,7 @@
 import { Avatar, Box, Paper, Typography } from "@mui/material";
 import { VTabs } from "../VTabs";
 
-import pedroImg from "/public/pedroFoto.jpeg";
-
-const VTabsProps = [
-  {
-    index: 0,
-    label: "asdsad",
-    content: "asdasd",
-  },
-  {
-    index: 1,
-    label: "asdsad",
-    content: "asdasd",
-  },
-];
+import pedroImg from "../../assets/pedroFoto.jpeg";
 
 export const About = () => {
   return (

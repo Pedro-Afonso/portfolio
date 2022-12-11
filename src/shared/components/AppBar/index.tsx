@@ -19,7 +19,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 
-import pedroImg from "/public/pedroFoto.jpeg";
+import pedroImg from "../../assets/pedroFoto.jpeg";
 
 const pages = [
   { page: "Inicial", link: "#hero" },
