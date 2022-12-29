@@ -2,6 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { UCard } from "../UCard";
 
 /* Icons */
+import materialUiIcon from "../../assets/icons/materialui.png";
 import typescriptIcon from "../../assets/icons/typescript.svg";
 import rapidApiIcon from "../../assets/icons/rapidapi.svg";
 import expressIcon from "../../assets/icons/express.svg";
@@ -9,7 +10,6 @@ import mongoDbIcon from "../../assets/icons/mongodb.svg";
 import socketIcon from "../../assets/icons/socket.svg";
 import reactIcon from "../../assets/icons/react.svg";
 import reduxIcon from "../../assets/icons/redux.svg";
-import materialUiIcon from "../../assets/icons/materialui.png";
 
 const myProjects = [
   {
@@ -49,7 +49,7 @@ const myProjects = [
     _id: 2,
     title: "Reactgram",
     thumbnail:
-      "https://user-images.githubusercontent.com/50973575/203847038-ed899369-fc18-4ca2-96c8-aa8313484c6e.png",
+      "https://user-images.githubusercontent.com/50973575/210013295-678b9482-f4e8-4cee-9b62-4891876b64d3.png",
     techStack: "React JS, Material UI, Redux Toolkit, Express, MongoDB",
     github: "https://www.github.com/pedro-afonso/reactgram-frontend",
     url: "https://reactgram-frontend.vercel.app",
