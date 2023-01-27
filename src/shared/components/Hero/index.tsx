@@ -11,7 +11,7 @@ export const Hero = () => {
         p={10}
       >
         <Box>
-          <Typography>Bem Vindo ao meu mundo</Typography>
+          <Typography>Bem Vindo ao meu espaço</Typography>
           <Typography fontSize="4rem">Pedro Afonso</Typography>
           <Typography>Desenvolvedor Front-End</Typography>
           <Box mt={10}>

@@ -1,7 +1,7 @@
-import { Box, Button, IconButton, Paper, Typography } from "@mui/material";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GithubIcon from "@mui/icons-material/GitHub";
-import EmailIcon from "@mui/icons-material/Email";
+import { Box, Button, IconButton, Link, Paper, Typography } from '@mui/material'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import GithubIcon from '@mui/icons-material/GitHub'
+import EmailIcon from '@mui/icons-material/Email'
 
 export const Contact = () => {
   return (
@@ -18,9 +18,19 @@ export const Contact = () => {
           incrível juntos
         </Typography>
         <Box my={3}>
-          <Button variant="contained" sx={{ fontWeight: "600", color: "#000" }}>
+          <Link
+            href="https://drive.google.com/file/d/1nqe54SE1pYW5UVUIqCHAwMbO2zNeUEdy/view"
+            sx={{
+              fontWeight: '600',
+              color: '#000',
+              backgroundColor: 'yellow',
+              padding: '10px',
+              borderRadius: '10px',
+              textDecoration: 'none'
+            }}
+          >
             Baixar CV
-          </Button>
+          </Link>
         </Box>
         <Box>
           <IconButton
@@ -39,14 +49,13 @@ export const Contact = () => {
           </IconButton>
           <IconButton
             size="large"
-            href="https://github.com/pedro-afonso"
+            href="mailto:pedroafonsojs@gmail.com"
             target="_blank"
           >
-            {/* pedroafonsojs@gmail.com */}
             <EmailIcon />
           </IconButton>
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}

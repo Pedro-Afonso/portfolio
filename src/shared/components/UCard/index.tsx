@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   Avatar,
   AvatarGroup,
@@ -11,31 +11,23 @@ import {
   CardMedia,
   Grow,
   Paper,
-  Typography,
-} from "@mui/material";
+  Typography
+} from '@mui/material'
+import { useAppDispatch } from '../../hooks'
+import { toggleProjectDetailst } from '../../slice/modalSlice'
+import { IProjectData } from '../../config/projects'
 
-interface ICard {
-  title: string;
-  techStack: string;
-  thumbnail: string;
-  github: string;
-  url: string;
-  stack: { name: string; iconUrl: string }[];
-  secondaryStack: { name: string; iconUrl: string }[];
-}
+interface ICard extends IProjectData {}
 
-/* #1A2632 */
+export const UCard: React.FC<ICard> = projectData => {
+  const { title, thumbnail, github, url, stack, secondaryStack, images } =
+    projectData
 
-export const UCard: React.FC<ICard> = ({
-  title,
-  thumbnail,
-  github,
-  url,
-  stack,
-  secondaryStack,
-}) => {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-  const refCard = useRef<HTMLDivElement>(null);
+  const [isIntersecting, setIsIntersecting] = useState(false)
+
+  const refCard = useRef<HTMLDivElement>(null)
+
+  const dispatch = useAppDispatch()
 
   const observer = useMemo(
     () =>
@@ -43,16 +35,16 @@ export const UCard: React.FC<ICard> = ({
         setIsIntersecting(entry.isIntersecting)
       ),
     []
-  );
+  )
 
   useEffect(() => {
-    if (!refCard.current) return;
-    observer.observe(refCard.current);
+    if (!refCard.current) return
+    observer.observe(refCard.current)
 
     return () => {
-      observer.disconnect();
-    };
-  }, [refCard, observer]);
+      observer.disconnect()
+    }
+  }, [refCard, observer])
 
   return (
     <Grow in={isIntersecting} timeout={1000}>
@@ -71,10 +63,10 @@ export const UCard: React.FC<ICard> = ({
                 <Avatar
                   key={i}
                   sx={{
-                    alignSelf: "end",
-                    width: "20px",
-                    height: "20px",
-                    background: "#4E4E4E",
+                    alignSelf: 'end',
+                    width: '20px',
+                    height: '20px',
+                    background: '#4E4E4E'
                   }}
                   title={name}
                   alt={name}
@@ -84,7 +76,7 @@ export const UCard: React.FC<ICard> = ({
               {stack.map(({ name, iconUrl }, i) => (
                 <Avatar
                   key={i}
-                  sx={{ width: "40px", height: "40px", background: "#4E4E4E" }}
+                  sx={{ width: '40px', height: '40px', background: '#4E4E4E' }}
                   title={name}
                   alt={name}
                   src={iconUrl}
@@ -98,10 +90,10 @@ export const UCard: React.FC<ICard> = ({
             Repositório
           </Button>
           <Button href={url} target="_blank" fullWidth>
-            Visitar
+            Ver mais
           </Button>
         </CardActions>
       </Card>
     </Grow>
-  );
-};
+  )
+}
