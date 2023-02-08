@@ -2,7 +2,6 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   Avatar,
   AvatarGroup,
-  Box,
   Button,
   Card,
   CardActionArea,
@@ -58,15 +57,14 @@ export const UCard: React.FC<ICard> = projectData => {
           />
           <CardContent>
             <Typography>{title}</Typography>
-            <AvatarGroup variant="rounded" max={10}>
+            <AvatarGroup variant="square" max={10}>
               {secondaryStack.map(({ name, iconUrl }, i) => (
                 <Avatar
                   key={i}
                   sx={{
                     alignSelf: 'end',
                     width: '20px',
-                    height: '20px',
-                    background: '#4E4E4E'
+                    height: '20px'
                   }}
                   title={name}
                   alt={name}
@@ -76,7 +74,7 @@ export const UCard: React.FC<ICard> = projectData => {
               {stack.map(({ name, iconUrl }, i) => (
                 <Avatar
                   key={i}
-                  sx={{ width: '40px', height: '40px', background: '#4E4E4E' }}
+                  sx={{ width: '40px', height: '40px' }}
                   title={name}
                   alt={name}
                   src={iconUrl}
@@ -90,7 +88,7 @@ export const UCard: React.FC<ICard> = projectData => {
             Repositório
           </Button>
           <Button href={url} target="_blank" fullWidth>
-            Ver mais
+            Website
           </Button>
         </CardActions>
       </Card>

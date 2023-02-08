@@ -5,10 +5,17 @@ import reactQueryIcon from '../assets/icons/reactquery.svg'
 import rapidApiIcon from '../assets/icons/rapidapi.svg'
 import expressIcon from '../assets/icons/express.svg'
 import mongoDbIcon from '../assets/icons/mongodb.svg'
-import nextjsIcon from '../assets/icons/nextjs.webp'
 import socketIcon from '../assets/icons/socket.svg'
-import reactIcon from '../assets/icons/react.svg'
-import reduxIcon from '../assets/icons/redux.svg'
+import nextjsIcon from '../assets/icons/nextjs.svg'
+
+const reactIcon =
+  'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+
+const reduxIcon =
+  'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg'
+
+const jestIcon =
+  'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg'
 
 export interface IProjectData {
   _id: number
@@ -33,7 +40,58 @@ export interface IProjectData {
 
 export const myProjects: IProjectData[] = [
   {
-    _id: 0,
+    _id: 5,
+    title: 'Cart App',
+    techStack: 'Next JS, Styled Component, Redux Toolkit',
+    thumbnail:
+      'https://user-images.githubusercontent.com/50973575/217561998-ed0740de-ad59-4f0e-b128-ca0ebea3f2d0.png',
+    github: 'https://www.github.com/pedro-afonso/cart',
+    url: 'https://cart-murex.vercel.app',
+    stack: [
+      {
+        name: 'Next',
+        iconUrl: nextjsIcon
+      },
+      {
+        name: 'Redux Toolkit',
+        iconUrl: reduxIcon
+      }
+    ],
+    secondaryStack: [
+      {
+        name: 'Typescript',
+        iconUrl: typescriptIcon
+      },
+      {
+        name: 'Jest',
+        iconUrl: jestIcon
+      }
+    ],
+    images: [
+      [
+        'https://user-images.githubusercontent.com/50973575/197407619-036fb486-09f9-4f1a-a14e-a3ca12186b8c.png',
+        'https://user-images.githubusercontent.com/50973575/197407625-714e6b20-e095-4da0-917f-a10a07d97924.png',
+        'https://user-images.githubusercontent.com/50973575/197407624-0d9a68ee-c27b-43f6-87ba-adc82ad77707.png',
+        'https://user-images.githubusercontent.com/50973575/197407622-55a067f6-15e2-40af-be9e-df7d74f78dc5.png',
+        'https://user-images.githubusercontent.com/50973575/197407621-a73f3623-2eda-4a5c-8b45-76cb8921e4bb.png'
+      ],
+      [
+        'Listar músicas',
+        'Músicas relacionadas',
+        'Letra da música',
+        'Media Player',
+        'Fácil navegação entre as páginas'
+      ]
+    ],
+    description:
+      'Este projeto tem o objetivo de facilitar a acesso as músicas mais populares do momento, com filtro de gênero musical e um design amigável, proporcionando uma experiência melhor para o cliente.',
+    objective:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, recusandae facere obcaecati unde qui, officiis accusamus modi laborum ducimus error quisquam vero facilis labore amet debitis adipisci necessitatibus, cumque dolorum?',
+    presentation:
+      'Eu descobri a API shazam core API no youtube e me desafiei criar uma aplicação com as ferramentas que eu conheço'
+  },
+  {
+    _id: 4,
     title: 'Random User App',
     techStack: 'React JS, Material UI, Redux Toolkit , Rapid API',
     thumbnail:
